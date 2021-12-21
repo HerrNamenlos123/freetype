@@ -62,3 +62,7 @@ project "freetype"
 
 		"builds/windows/ftdebug.c"
 	}
+
+	FREETYPE_INCLUDE_DIRS = { _SCRIPT_DIR .. "/include", _SCRIPT_DIR .. "/src" }
+	FREETYPE_LINK_DIRS = { _SCRIPT_DIR .. "/bin/" }
+	FREETYPE_LINKS = { "freetype" }
