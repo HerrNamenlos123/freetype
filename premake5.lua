@@ -13,7 +13,7 @@ project "freetype"
     architecture "x86_64"
 
     includedirs { "include", "src" }
-	defines { "FT2_BUILD_LIBRARY=1", "_UNICODE", "UNICODE", "_LIB" }
+	defines { "FT2_BUILD_LIBRARY=1", "_UNICODE", "UNICODE", "_LIB", "_CRT_SECURE_NO_WARNINGS" }
 	removedefines { "DEBUG" }
 
     files {
